@@ -1,0 +1,178 @@
+//33 string is convert into 33 number
+let i="33";
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=Number(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+
+// but 33a string is not convert into 33a bcz of alphabet but it try and typeof also give number type but still when u see and print that valiarble
+//NaN that means Not a Number
+
+let i="33a";
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=Number(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+
+
+// in null case 0 are find but type of still give number
+
+let i=null;
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=Number(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+
+//in case of undefined we still see the NaN
+let i=undefined;
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=Number(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+// in case of true variable gives 1 but typeof show number
+
+let i=true;
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=Number(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+
+---------------------------------------convert in boolean----------------------------------------------
+
+//in case of 0 after conversion give false
+let i=0;
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=Boolean(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+
+//in case of 1 after conversion give true
+let i=1;
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=Boolean(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+
+//in case of 3 after conversion give true ab hum koi bhi value lenge toh true hi ayga
+let i=3;
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=Boolean(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+// in case of string after convert it gives true
+let i="hadsu";
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=Boolean(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+
+
+// in case of empty string after convert it gives false
+let i="";
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=Boolean(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+
+
+
+-----------------------------convert into string-------------------------
+  //number is converted into string
+ let i=6;
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=String(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+
+-------------------------------------------parseFloat()---------------------------------------
+  jha number 22a likhne pr convert krne k bjay NaN deta hai wha yeh 22 convert krega a remove kr dega
+
+let i="2212a";
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=parseFloat(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+
+//parse float is convert 2.2 
+let i="2.2";
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=parseFloat(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
+
+
+
+//parse float is convert 2.2 but parseint is not convert 2.2 it gives only integer value 2
+let i="2";
+document.write(typeof i);
+document.write("<br>");
+document.write(i);
+let convert=parseFloat(i);
+document.write("<br>");
+document.write(convert);
+document.write("<br>");
+document.write(typeof convert);
