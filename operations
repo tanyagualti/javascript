@@ -1,0 +1,32 @@
+//this code gives -3
+let val=3;
+let a=-val;
+document.write(a);
+
+a+b
+a-b
+a*b
+a**b
+
+let a=3;
+let b=4;
+document.write(3**4); //it give 81 how?? 3^4 => 3*3*3*3=81
+
+a/b
+a%3
+
+
+//it is use for string merge
+let a="hello ";
+let b="tanya";
+document.write(a+b);
+
+
+
+document.write("1" + 2 +2); //first value string mil gyi toh second bhi string consider kr lia
+document.write("<br>");
+document.write("1" + 2); //same reason as above
+document.write("<br>");
+document.write(1 + 2 + "2"); //first value integer hai toh second integer k sath add kr diya and third as a string write ho gya
+console.log(+true); it gives 1
+console.log(+""); it gives 0
