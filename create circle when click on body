@@ -30,7 +30,7 @@ transform: translate(-50%,-50%);
 		const circle=document.createElement('div'); //when click on body create a div at that time
 		circle.classList.add('circle');
 
-		circle.style.left=`${event.clientX}px`;
+		circle.style.left=`${event.clientX}px`;  clientx and clienty tells the location of click
 		circle.style.top=`${event.clientY}px`;
 		document.body.appendChild(circle);
 
