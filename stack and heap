@@ -1,0 +1,23 @@
+all premitive data type use stack memory and all non primitive data type use heap memory
+
+in stack share the copy of content
+
+var name="tanya";
+
+var myname=name; //it has the copy of tanya not original value
+var myname="manya";
+console.log(name);
+console.log(myname);
+output tanya manya
+
+//in heap memory it gives the reference of original value
+
+var email={mail:"tanya@gmail.com"};
+var myemail=email //this takes original value refernce
+myemail.mail="manya@gmail.com"
+
+console.log(email.mail); //thats wht email value alaso change
+console.log(myemail.mail);
+
+output:manya@gmail.com
+manya@gmail.com
