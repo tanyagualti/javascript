@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test Page</title>
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.circle{
+position: absolute;
+width: 50px;
+height: 50px;
+background-color:grey ;
+border-radius: 50%;
+transform: translate(-50%,-50%);
+
+		}
+	</style>
+</head>
+<body>
+
+<p>Click anywhere on this page to see an alert.</p>
+<div style="height: 273px;width: 333px;border: 2px solid black;"></div>
+<script type="text/javascript">
+	document.body.addEventListener('click', function(event) {
+		const circle=document.createElement('div'); //when click on body create a div at that time
+		circle.classList.add('circle');
+
+		circle.style.left=`${event.clientX}px`;
+		circle.style.top=`${event.clientY}px`;
+		document.body.appendChild(circle);
+
+console.log(event);
+
+		setTimeout(()=>{
+circle.remove(); and after 1sec circle will remove
+		},1000);
+
+
+		
+ 	});
+</script>
+
+</body>
+</html>
+
